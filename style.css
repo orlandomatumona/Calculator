@@ -1,0 +1,110 @@
+body{
+    overflow: hidden;
+}
+main{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+
+
+}
+
+/*Aqui trabalhamos o contair principal onde tem nom e, altura, peso, calcular, e caixa de resultado*/
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+
+/*Aqui trabalhamos particularmente so o Titulo*/
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2rem serif;
+    border-bottom: solid 5px black;
+    margin-bottom: 20px;
+}
+
+/*Aqui trabalhamos particularmente so o Input aonde vamos meter os string e os numeros*/
+
+.input{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Aqui input input serviu para nos meter todos textos que vai ser inserido no meio e com ummtanho especifico*/
+
+.input input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+}
+
+input label{
+    font: bold 1.5rem serif;
+}
+/*Aqui trabalhamos o Botao calcular*/
+button{
+    width: 300px;
+    height: 40px;
+    background: black;
+    color: yellow;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result{
+ display: flex;
+ margin-top: 20px;
+ padding-bottom: 10px;
+ align-items: center;
+ width: 300px;
+ height: 150px;
+ border-radius: 5px;
+ font: italic 1.5rem serif;
+ box-shadow: 0px 0px 10px black;
+ background: black;
+ color: yellow;
+ padding: 20px;
+ box-sizing: border-box;
+ user-select: none;
+}
+
+
+
+@media(max-width:480px){
+
+    .main{
+        width: 23.4%;
+
+    }
+}
+
+@media(max-width:320px){
+
+    .main{
+        width: 23%;
+        
+    }
+}
